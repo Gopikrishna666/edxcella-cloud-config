@@ -4,8 +4,18 @@ spring:
     password: HR
     url: jdbc:oracle:thin:@10.90.1.105:1521/DEV
     username: HR
-      
   jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
+#    properties:
+ #     hibernate:
+  #      format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+      
+
+server:
+  port: 2444
+  
+logging:
+  level:
+    com.hazelcast: off
